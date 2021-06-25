@@ -3,6 +3,8 @@
 
 -- @BLOCK
 CREATE TABLE Users(
-    
-    email VARCHAR (255),
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR (255) NOT NULL UNIQUE,
+    bio TEXT,
+    country VARCHAR(2)
 );
